@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+  }
+  
+  
+  
+  .wrapper {
+    display: flex;
+    width: 1100px;
+    margin: 0 auto;
+  }
+  
+  nav {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    background: transparent;
+    position: absolute;
+    z-index: 100;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    padding: 5px 5rem;
+    
+   
+  }
+  
+  nav .logo {
+    flex-grow: 1;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+  .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-items li{
+    list-style: none;
+    padding: 0 0.9rem;
+    position: relative;
+  }
+  
+ 
+  
+  .nav-items li a {
+    color: rgb(183, 179, 179);
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+  }
+  .register-btn button{
+    border: none;
+    border-radius: 10px;
+    background-color: #0E63DC;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding:15px 22px;
+
+  }
+  .login-btn p{
+    color: #0E63DC;
+    font-weight: 600;
+    margin-right: -10px;
+    margin-left: 1.3rem;
+  }
+  .active p{
+    font-weight: 700;
+    color: black;
+  }
+  .nav-items li a:hover::after,
+.nav-items li a.active::after{
+  content: "";
+  width: 16%;
+  height: 4px;
+  border-radius: 1px;
+  background: #0E63DC;
+  position: absolute;
+  bottom: -4px;
+  left: 2.1rem;
+}
+
+
+.header-container {
+  background: #F3F7FD;
+  padding-top: 2rem;
+  height: 100vh ;
+  display: flex;
+  align-items: center;
+}
+.header-left-content p{
+  font-size: 1.1rem;
+  color: rgb(183, 179, 179);
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+.header-left-content{
+  flex-grow: 1;
+  padding-left: 6rem;
+}
+.right-shape-container{
+  position: relative;
+  bottom: -1rem;
+}
+.header-left-content{
+  font-size: 2rem;
+}
+.action-btn{
+ border: none;
+  border-radius: 10px;
+  background-color: #0E63DC;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  padding:18px 22px;
+  box-shadow: 5px 15px 30px #6fa9fa;
+}
+.header-options-container{
+  position: absolute;
+  right: 0;
+  width: 550px;
+  height: 70px;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: white;
+}
+.doc-header-info{
+  display: flex;
+}
+.circular-logo{
+  position: absolute;
+  left: -1rem;
+  height: 50px;
+  width: 50px;
+  background-color: #0059d7;
+  border-radius: 100%;
+}
+.name-container{
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.logo-icon{
+  padding-top: 0.5rem;
+}
+.name-content{
+  line-height: 1.9;
+}
+.name-content p{
+  color: rgb(183, 179, 179);
+}
